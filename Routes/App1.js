@@ -3,8 +3,8 @@ const bodyParser=require('body-parser')
 const express=require ('express');
 const app= express();
 
-const adminRoute=require('./routes/admin');
-const shopRoutes=require('./routes/shop')
+const adminRoute=require('./Routes/admin');
+const shopRoutes=require('./Routes/shop')
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/admin', adminRoute);

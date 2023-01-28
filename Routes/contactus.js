@@ -3,7 +3,7 @@ const path=require('path');
 const { builtinModules } = require('module');
 const routeDir=require('../Helper/path');
 const router=express.Router();
-router.get('/',(req, res, next)=>{
-    res.sendFile(path.join(routeDir, 'Views', 'shop.html') );
+router.get('/ContactUs',(req, res, next)=>{
+    res.sendFile(path.join(routeDir, 'Views', 'ContactUs.html') );
 });
 module.exports=router;
